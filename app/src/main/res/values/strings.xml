@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Domoticon</string>
+    <string-array name="spinner_items">
+        <item>Opción 1</item>
+        <item>Opción 2</item>
+        <item>Opción 3</item>
+    </string-array>
+</resources>
