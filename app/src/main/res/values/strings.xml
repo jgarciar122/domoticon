@@ -1,8 +1,6 @@
 <resources>
     <string name="app_name">Domoticon</string>
-    <string-array name="spinner_items">
-        <item>Opción 1</item>
-        <item>Opción 2</item>
-        <item>Opción 3</item>
-    </string-array>
+    <string name="welcome_message">¡Bienvenido a Domoticon!</string>
+    <string name="button_text">Iniciar</string>
+    <string name="message_key">Este es un mensaje de ejemplo.</string>
 </resources>
