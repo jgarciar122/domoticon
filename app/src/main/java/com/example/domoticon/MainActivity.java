@@ -19,16 +19,13 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        // Inicializa el binding
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
-        // Crea y asigna el adaptador al Spinner
         ArrayAdapter<String> adaptador = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, valores);
         adaptador.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         binding.spinner.setAdapter(adaptador);
 
-        // Establece el listener para el Spinner
         binding.spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> adapterView, View view, int position, long id) {
@@ -37,13 +34,11 @@ public class MainActivity extends AppCompatActivity {
                     Intent intent;
                     switch (opcionSeleccionada) {
                         case "2":
-                            // Inicia Activity2 si se selecciona "2"
                             intent = new Intent(MainActivity.this, Activity2.class);
-                            startActivity(intent); // Asegúrate de iniciar la actividad
+                            startActivity(intent);
                             break;
                         case "3":
-                            // Aquí puedes iniciar otra actividad si es necesario
-                            //intent = new Intent(MainActivity.this, Activity3.class); // Cambia Activity3 según corresponda
+                            //intent = new Intent(MainActivity.this, Activity3.class);
                             //startActivity(intent);
                             break;
                     }
