@@ -2,5 +2,4 @@
     <string name="app_name">Domoticon</string>
     <string name="welcome_message">¡Bienvenido a Domoticon!</string>
     <string name="button_text">Iniciar</string>
-    <string name="message_key">Este es un mensaje de ejemplo.</string>
 </resources>

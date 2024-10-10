@@ -38,8 +38,8 @@ public class MainActivity extends AppCompatActivity {
                             startActivity(intent);
                             break;
                         case "3":
-                            //intent = new Intent(MainActivity.this, Activity3.class);
-                            //startActivity(intent);
+                            intent = new Intent(MainActivity.this, Activity3.class);
+                            startActivity(intent);
                             break;
                     }
                 }
@@ -47,7 +47,6 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onNothingSelected(AdapterView<?> adapterView) {
-                // No se hace nada si no se selecciona nada
             }
         });
     }
